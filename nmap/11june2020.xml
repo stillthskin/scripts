@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.60 scan initiated Thu Jun 11 11:15:18 2020 as: nmap -v -p 1-65535 -sV -O -sS -T5 -oA 11june2020 192.168.0.1 -->
+<nmaprun scanner="nmap" args="nmap -v -p 1-65535 -sV -O -sS -T5 -oA 11june2020 192.168.0.1" start="1591863318" startstr="Thu Jun 11 11:15:18 2020" version="7.60" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="ARP Ping Scan" time="1591863318"/>
+<taskend task="ARP Ping Scan" time="1591863318" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1591863318"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1591863318"/>
+<taskbegin task="SYN Stealth Scan" time="1591863318"/>
+<taskprogress task="SYN Stealth Scan" time="1591863349" percent="5.03" remaining="586" etc="1591863935"/>
+<taskprogress task="SYN Stealth Scan" time="1591863379" percent="6.65" remaining="857" etc="1591864235"/>
+<taskprogress task="SYN Stealth Scan" time="1591863409" percent="8.70" remaining="956" etc="1591864364"/>
+<taskprogress task="SYN Stealth Scan" time="1591863439" percent="10.40" remaining="1043" etc="1591864481"/>
+<taskprogress task="SYN Stealth Scan" time="1591863475" percent="12.37" remaining="1112" etc="1591864587"/>
+<taskprogress task="SYN Stealth Scan" time="1591863793" percent="31.29" remaining="1044" etc="1591864836"/>
+<taskprogress task="SYN Stealth Scan" time="1591863886" percent="37.09" remaining="964" etc="1591864850"/>
+<taskprogress task="SYN Stealth Scan" time="1591863973" percent="42.50" remaining="887" etc="1591864859"/>
+<taskprogress task="SYN Stealth Scan" time="1591864060" percent="47.88" remaining="808" etc="1591864868"/>
+<taskprogress task="SYN Stealth Scan" time="1591864100" percent="50.38" remaining="771" etc="1591864870"/>
+<taskprogress task="SYN Stealth Scan" time="1591864196" percent="55.91" remaining="693" etc="1591864888"/>
+<taskend task="SYN Stealth Scan" time="1591864218" extrainfo="1 host timed out"/>
+<taskbegin task="Service scan" time="1591864218"/>
+<taskbegin task="NSE" time="1591864218"/>
+<taskend task="NSE" time="1591864219"/>
+<taskbegin task="NSE" time="1591864219"/>
+<taskend task="NSE" time="1591864219"/>
+<host starttime="1591863318" endtime="1591864219"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.0.1" addrtype="ipv4"/>
+<address addr="8C:04:FF:70:27:08" addrtype="mac" vendor="Technicolor CH USA"/>
+<hostnames>
+<hostname name="_gateway" type="PTR"/>
+</hostnames>
+</host>
+<runstats><finished time="1591864219" timestr="Thu Jun 11 11:30:19 2020" elapsed="901.66" summary="Nmap done at Thu Jun 11 11:30:19 2020; 1 IP address (1 host up) scanned in 901.66 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

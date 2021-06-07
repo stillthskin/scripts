@@ -1,0 +1,18 @@
+...................................
+...................................
+apt install tor
+edit /etc/proxychains.conf
+uncomment #dynamic chain
+add sock5 last line 
+socks5 127.0.0.1 9050
+service tor start
+service tor status
+proxychains commands
+...................................
+change dns 
+cat /etc/resolv.conf
+nameserver ip
+...................................
+...................................
+
+macchanger -r eth0 

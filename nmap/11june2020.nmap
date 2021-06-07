@@ -1,0 +1,9 @@
+# Nmap 7.60 scan initiated Thu Jun 11 11:15:18 2020 as: nmap -v -p 1-65535 -sV -O -sS -T5 -oA 11june2020 192.168.0.1
+Warning: 192.168.0.1 giving up on port because retransmission cap hit (2).
+Increasing send delay for 192.168.0.1 from 0 to 5 due to 11 out of 21 dropped probes since last increase.
+Nmap scan report for _gateway (192.168.0.1)
+Host is up (0.012s latency).
+Skipping host _gateway (192.168.0.1) due to host timeout
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Jun 11 11:30:19 2020 -- 1 IP address (1 host up) scanned in 901.66 seconds

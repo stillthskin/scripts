@@ -1,0 +1,5 @@
+gunicorn
+websocket
+numpy
+python-binance
+flask

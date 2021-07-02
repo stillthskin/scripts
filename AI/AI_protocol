@@ -1,0 +1,12 @@
+1. Imports
+2. Data pre-proccesing.
+        (i)   Get data.
+        (ii)  Split to train, test.
+        (iii) Create lable based on ouput layer.
+        (iv)  Append to train, test, labels lists. 
+3. Declare suitable model.
+4. Add layers to model.
+5. Compile model(ready for training).
+6. Train model(check for overfit if nessesary).
+7. Save model.
+8. Test model.

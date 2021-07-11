@@ -1,0 +1,12 @@
+class obj = new constructor(); /*search for constructor if absent set all to null*/
+
+default constructor 
+= classname(){
+name = "name";
+age = "age";
+}
+parametarized constructor
+= classname(string name, int age){
+name = name;
+age = age;
+}

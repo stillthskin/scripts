@@ -1,0 +1,4 @@
+django-admin 
+django admin startproject project_name.
+creates  project with several default files.
+python manage.py runserver /*to deploy app*/

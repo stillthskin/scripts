@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Thu Aug  5 12:20:14 2021 as: nmap -v -A -p 1-65535 -sV -O -sS -T5 -oA pathfinder08_2021_2 10.10.10.29 -->
+<nmaprun scanner="nmap" args="nmap -v -A -p 1-65535 -sV -O -sS -T5 -oA pathfinder08_2021_2 10.10.10.29" start="1628155214" startstr="Thu Aug  5 12:20:14 2021" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1628155214"/>
+<taskend task="NSE" time="1628155214"/>
+<taskbegin task="NSE" time="1628155214"/>
+<taskend task="NSE" time="1628155214"/>
+<taskbegin task="NSE" time="1628155214"/>
+<taskend task="NSE" time="1628155214"/>
+<taskbegin task="Ping Scan" time="1628155214"/>
+<taskend task="Ping Scan" time="1628155215" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1628155215"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1628155215"/>
+<taskbegin task="SYN Stealth Scan" time="1628155215"/>
+<taskprogress task="SYN Stealth Scan" time="1628155246" percent="7.45" remaining="386" etc="1628155631"/>
+<taskprogress task="SYN Stealth Scan" time="1628155276" percent="18.04" remaining="278" etc="1628155553"/>
+<taskprogress task="SYN Stealth Scan" time="1628155306" percent="28.14" remaining="233" etc="1628155538"/>
+<taskprogress task="SYN Stealth Scan" time="1628155336" percent="39.47" remaining="186" etc="1628155522"/>
+<taskprogress task="SYN Stealth Scan" time="1628155366" percent="55.27" remaining="123" etc="1628155488"/>
+<taskprogress task="SYN Stealth Scan" time="1628155396" percent="65.61" remaining="95" etc="1628155491"/>
+<taskprogress task="SYN Stealth Scan" time="1628155426" percent="81.38" remaining="49" etc="1628155474"/>
+<taskend task="SYN Stealth Scan" time="1628155467" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1628155467"/>
+<taskend task="Service scan" time="1628155474" extrainfo="2 services on 1 host"/>
+<taskbegin task="Traceroute" time="1628155479"/>
+<taskend task="Traceroute" time="1628155479"/>
+<taskbegin task="Parallel DNS resolution of 2 hosts." time="1628155479"/>
+<taskend task="Parallel DNS resolution of 2 hosts." time="1628155479"/>
+<taskbegin task="NSE" time="1628155479"/>
+<taskend task="NSE" time="1628155483"/>
+<taskbegin task="NSE" time="1628155483"/>
+<taskend task="NSE" time="1628155484"/>
+<taskbegin task="NSE" time="1628155484"/>
+<taskend task="NSE" time="1628155484"/>
+<host starttime="1628155214" endtime="1628155484"><status state="up" reason="echo-reply" reason_ttl="127"/>
+<address addr="10.10.10.29" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65533">
+<extrareasons reason="no-responses" count="65533"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Microsoft IIS httpd" version="10.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:iis:10.0</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: OPTIONS TRACE GET HEAD POST&#xa;  Potentially risky methods: TRACE"><table key="Supported Methods">
+<elem>OPTIONS</elem>
+<elem>TRACE</elem>
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+</table>
+<table key="Potentially risky methods">
+<elem>TRACE</elem>
+</table>
+</script><script id="http-server-header" output="Microsoft-IIS/10.0"><elem>Microsoft-IIS/10.0</elem>
+</script><script id="http-title" output="IIS Windows Server"><elem key="title">IIS Windows Server</elem>
+</script></port>
+<port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="mysql" product="MySQL" extrainfo="unauthorized" method="probed" conf="10"><cpe>cpe:/a:mysql:mysql</cpe></service></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="80"/>
+<osmatch name="Microsoft Windows Server 2016" accuracy="91" line="75728">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2016" accuracy="91"><cpe>cpe:/o:microsoft:windows_server_2016</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2012" accuracy="85" line="75072">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2012" accuracy="85"><cpe>cpe:/o:microsoft:windows_server_2012</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2012 or Windows Server 2012 R2" accuracy="85" line="75205">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2012" accuracy="85"><cpe>cpe:/o:microsoft:windows_server_2012:r2</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2012 R2" accuracy="85" line="75243">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2012" accuracy="85"><cpe>cpe:/o:microsoft:windows_server_2012:r2</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2008 R2" accuracy="85" line="74118">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="85"><cpe>cpe:/o:microsoft:windows_server_2008:r2</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows 10 1607" accuracy="85" line="69286">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="10" accuracy="85"><cpe>cpe:/o:microsoft:windows_10:1607</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="31773" lastboot="Thu Aug  5 03:35:11 2021"/>
+<distance value="2"/>
+<tcpsequence index="261" difficulty="Good luck!" values="3676F86A,92AD125D,93A31507,E900CCAB,8C561A0,5907BBFC"/>
+<ipidsequence class="Incremental" values="FDA,FDB,FDC,FDD,FDE,FDF"/>
+<tcptssequence class="1000HZ" values="1E4B99B,1E4B9FE,1E4BA61,1E4BAC6,1E4BB2A,1E4BB8E"/>
+<trace port="80" proto="tcp">
+<hop ttl="1" ipaddr="10.10.14.1" rtt="212.55"/>
+<hop ttl="2" ipaddr="10.10.10.29" rtt="212.56"/>
+</trace>
+<times srtt="201084" rttvar="12689" to="251840"/>
+</host>
+<taskbegin task="NSE" time="1628155484"/>
+<taskend task="NSE" time="1628155484"/>
+<taskbegin task="NSE" time="1628155484"/>
+<taskend task="NSE" time="1628155484"/>
+<taskbegin task="NSE" time="1628155484"/>
+<taskend task="NSE" time="1628155484"/>
+<runstats><finished time="1628155484" timestr="Thu Aug  5 12:24:44 2021" elapsed="270.58" summary="Nmap done at Thu Aug  5 12:24:44 2021; 1 IP address (1 host up) scanned in 270.58 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

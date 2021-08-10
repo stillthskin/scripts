@@ -1,0 +1,8 @@
+# Nmap 7.80 scan initiated Thu Aug  5 11:53:57 2021 as: nmap -v -p 1-65535 -sV -O -sS -T5 -oA pathfinder08_2021 10.10.10.29
+Increasing send delay for 10.10.10.29 from 0 to 5 due to 11 out of 25 dropped probes since last increase.
+Nmap scan report for 10.10.10.29
+Host is up (0.20s latency).
+Skipping host 10.10.10.29 due to host timeout
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Aug  5 12:08:57 2021 -- 1 IP address (1 host up) scanned in 900.95 seconds

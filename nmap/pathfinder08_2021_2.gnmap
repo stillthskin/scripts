@@ -1,0 +1,5 @@
+# Nmap 7.80 scan initiated Thu Aug  5 12:20:14 2021 as: nmap -v -A -p 1-65535 -sV -O -sS -T5 -oA pathfinder08_2021_2 10.10.10.29
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.29 ()	Status: Up
+Host: 10.10.10.29 ()	Ports: 80/open/tcp//http//Microsoft IIS httpd 10.0/, 3306/open/tcp//mysql//MySQL (unauthorized)/	Ignored State: filtered (65533)	Seq Index: 261	IP ID Seq: Incremental
+# Nmap done at Thu Aug  5 12:24:44 2021 -- 1 IP address (1 host up) scanned in 270.58 seconds

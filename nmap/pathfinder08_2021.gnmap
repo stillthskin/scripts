@@ -1,0 +1,5 @@
+# Nmap 7.80 scan initiated Thu Aug  5 11:53:57 2021 as: nmap -v -p 1-65535 -sV -O -sS -T5 -oA pathfinder08_2021 10.10.10.29
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.29 ()	Status: Up
+Host: 10.10.10.29 ()	Status: Timeout
+# Nmap done at Thu Aug  5 12:08:57 2021 -- 1 IP address (1 host up) scanned in 900.95 seconds

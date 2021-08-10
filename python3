@@ -24,3 +24,7 @@ except exception_name:
 CamelCase for classes
 underscore_for_methods
 Object1 = ClassName()
+def __init__():
+self keyword = reference current object
+inheritance   class Cat(Animal):
+

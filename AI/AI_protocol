@@ -4,9 +4,17 @@
         (ii)  Split to train, test.
         (iii) Create lable based on ouput layer.
         (iv)  Append to train, test, labels lists. 
-3. Declare suitable model.
+3. Declare suitable model. sequential for straigh through and non-sequential for loop between neurons. 
 4. Add layers to model.
 5. Compile model(ready for training).
 6. Train model(check for overfit if nessesary).
 7. Save model.
 8. Test model.
+from sklearn.model_selection import train_test_split
+x_train, x_test, y_train, y_test = train_test_split(X,Y,test_size=0.2)
+tf.keras.preprocessing.image_dataset_from_directory()
+model.compile(
+loss = "mse"
+optimiser = "sgd"
+metric = ?
+) #Tell model how to calculate loss how wrong weigh/biases are optimizer method to update weight and biases and metric calculate diff between lossses.

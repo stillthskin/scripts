@@ -5,15 +5,14 @@
 #body{
 	width: 100%;
 	height: 100vh;
-	transition: all;
-	transition-duration: 3s;
+	background: green;
 }
 .topSection{
 	width: 100%;
-	height: 70%;
+	height: 40%;
+	background-image:url("../images/sampleBG.jpeg");
 	opacity: .8;
 	box-shadow: ;
-	margin: auto;
 }
 #naviTab{
 	width: 100%;
@@ -28,10 +27,7 @@
 	height: 100%;
 }
 #linkSection{
-	float: right;
-	width: 60%;
-	height: 100%;
-
+	display: none;
 }
 #linkSection ul{
 	list-style: none;
@@ -62,20 +58,15 @@
 	background: black;
 	padding: 20px;
 	text-align: center;
-	transition: all;
-	transition-duration: 3s;
 }
 #welcomeSection{
-	width: 70%;
-	height: 100%;
-	float: right;
-	background-image:url("../images/sampleBG.jpeg");
+	width: 100%;
 }
 #welcomeSection h1{
 	color: white;
 	text-align: center;
 	font-family:  cursive;
-	font-size: 60px;
+	font-size: 40px;
 }
 
 .bottomSection{

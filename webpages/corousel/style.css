@@ -2,3 +2,14 @@
 	margin: 0;
 	padding: 0;
 }
+#bodyDiv{
+	min-width: 100vw;
+	min-height: 100vh;
+	background: grey;
+
+}
+.corouselContainer{
+	width: 90%;
+	height: 70%;
+	border: solid black 2px;
+}

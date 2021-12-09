@@ -1,0 +1,240 @@
+:root{
+  --BackgroundPrimary: green;
+  --BackgroundSecondary: green;
+  --TextPrimary: green;
+  --TextPrimary: green;
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background: #202A44;
+	animation: transIn 1s;
+}
+#naviTab{
+	width: 100%;
+	height: 40px;
+	background: #202A44;
+	border-bottom: solid 4px white;
+}
+#linkSection{
+	float: right;
+	width: 60%;
+	height: 100%;
+	right: 0;
+
+}
+#linkSection ul{
+	list-style: none;
+	width: 100%;
+	line-height: 40px;
+	float: right;
+	right: 0;
+}
+#linkSection li{
+	list-style: none;
+	display: inline-block;
+	line-height: 40px;
+}
+#linkSection a{
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	color: black;
+	background: white;
+	padding: 5px;
+	}
+#linkSection a:hover{
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	color: white;
+	background: black;
+	padding: 5px;
+	transition: all;
+	transition-duration: 3s;
+}
+#linkSectionMini{
+	width: 20%;
+	height: 100%;
+	background: yellow;
+	float: right;
+	display: none;
+}
+#linkSectionMiniMenu{
+	display: none;
+}
+.middleSect{
+	width: 100%;
+	overflow: hidden;
+	margin-top:30px ;
+}
+.mainMid{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.midLeft{
+	float: left;
+	width: 30%;
+	height: auto;
+	text-align: center;
+}
+.midLeft h2{
+	color: rgba(255, 255, 255, 0.5);
+}
+.midLeft .imageContainer{
+	border-radius: 50%;
+	width: 80%;
+	height: 40vh;
+	margin: auto;
+	overflow: hidden;
+}
+.midLeft .imageContainer img{
+	border-radius: 50%;
+	width: 100%;
+	height: 100%;
+
+}
+.midRight{
+	float: right;
+	width: 60%;
+	margin-right: 5%;
+}
+.midRight .textContainer{
+	width: 100%;
+	height: 70vh;
+	margin: auto;
+	color: skyblue;
+	padding: 6px;
+	background: rgba(0, 0, 0, 0.4);
+	border-top: solid rgba(255, 255, 255, 0.4);
+	border-left: solid rgba(255, 255, 255, 0.4);
+}
+.midRight .textContainer p{
+margin-top: 20px;
+line-height: 2em;
+padding: 6px;
+}
+.midRight .theContainer{
+	width: 100%;
+	height: 70vh;
+	background: rgba(0, 0, 0, 0.4);
+	border-top: solid rgba(255, 255, 255, 0.4);
+	border-left: solid rgba(255, 255, 255, 0.4);
+	margin: auto;
+	padding: 10px;
+	color: skyblue;
+}
+.my_form input[type='email'],
+         input[type='text'],
+         input[type='password'],
+         textarea   
+         {
+         width: 70%;
+         margin: auto;
+         margin-top: 20px;
+         border-radius: 15px;
+         padding: 12px;
+         outline: none;
+         color: var(--BackgroundAltP);
+         background: rgba(0, 0, 0, 0.4);
+         }
+.my_form input[type='submit']{
+	width: 25%;
+  margin-top: 20px;
+  background: none;
+  border-radius: 15px;
+  padding: 6px;
+  color: var(--BackgroundAltP);
+  outline: none;
+  background: rgba(0, 0, 0, 0.4);
+}
+.my_form p{
+	margin-top: 30px;
+	color: var(--BackgroundAltP);
+}
+.midRight .theContainer ul{
+list-style: none;
+margin-top: 30px;
+}
+.midRight .theContainer ul li{
+list-style: none;
+display: inline-block;
+padding :15px;
+background: white;
+border-radius: 6px;
+transition: all 2s;
+}
+.midRight .theContainer a{
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+}
+.midRight .theContainer ul li:nth-child(1):hover{
+background: #4267B2;
+text-color: #000000;
+}
+.midRight .theContainer ul li:nth-child(2):hover{
+background: #1DA1F2;
+}
+.midRight .theContainer ul li:nth-child(3):hover{
+background:repeating-linear-gradient(#8a3ab9,#fccc63,#fbad50,#cd486b);
+}
+.midRight .theContainer ul li:nth-child(4):hover{
+background:#0077b5;
+}
+.midRight .theContainer ul li:nth-child(1):hover a{
+	color: #ffffff;
+}
+.midRight .theContainer ul li:nth-child(2):hover a{
+	color: #ffffff;
+}
+.midRight .theContainer ul li:nth-child(3):hover a{
+	color: #ffffff;
+}
+.midRight .theContainer ul li:nth-child(4):hover a{
+	color: #ffffff;
+}
+
+@keyframes transIn{
+	from{
+  opacity: 0;
+  transform: rotateX(-10deg);
+	}
+	to{
+  opacity: 1;
+  transform: rotateX(0);
+	}
+}
+
+
+.myButton {
+	background: green;
+	color: white;
+	border-radius: 10px;
+	width: 10%;
+	height: auto;
+	padding: 15px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+.myButton:hover {
+background: green;
+}
+@media (max-width: 800px){
+	.midLeft{
+	float: none;
+	width: 100%;
+	min-height: 30vh;
+	text-align: center;
+}
+.midRight{
+	float: none;
+	width: 100%;
+}
+
+}

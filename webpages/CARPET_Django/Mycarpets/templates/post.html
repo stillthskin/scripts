@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css'%}">
+	<link rel='stylesheet' media='screen and (max-width: 500px)' href ="{% static 'css/stylemin.css' %}">
+	<title>Post</title>
+</head>
+<body id="body2">
+<a href="home" class="myButton"><b>&#8592;</b> Back to Home</a>	
+<div class="my_form">
+<h1>Post:</h1>
+<form action="feed" method="post" enctype="multipart/form-data">
+	{% csrf_token %}
+	<!--<input type="email" name="email" placeholder="Email...">-->
+	<input type="text" name="tittle" placeholder="Item Name...">
+	<textarea name="post" placeholder="Description..."></textarea>
+	<input type="number" name="price" placeholder="Price in KSH...">
+	<input type="file" name="myimage">
+    <input type="submit" name="submit" value="Send">
+</form>
+</div>
+</body>
+</html>

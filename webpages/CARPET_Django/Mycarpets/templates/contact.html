@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/styleoth.css'%}">
+	<link rel='stylesheet' media='screen and (max-width: 500px)' href ="{% static 'css/stylemin.css' %}">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contatcts</title>
+</head>
+<body>
+<section class="topSect">
+	<nav id="naviTab">
+				
+				<div id="linkSection">
+					<ul>
+						<li><a href="home"><i class="fa fa-home" aria-hidden="true"></i> HOME</a></li>
+						<li><a href="about"><i class="fa fa-info"></i> About US</a></li>
+						<li><a href="contact"><i class="fa fa-phone"></i> Contact</a></li>
+						<li><a href="#"><i class="fa fa-cog fa-spin"></i> Refference</a></li>
+
+					</ul>	
+				</div>
+				<button id="linkSectionMini"><i class="fa fa-bars"></i></button>
+			</nav>
+				<div id="linkSectionMiniMenu">
+						<ul>
+						<li><a href="home"><i class="fa fa-home" aria-hidden="true"></i> HOME</a></li>
+						<li><a href="about"><i class="fa fa-info"></i> About US</a></li>
+						<li><a href="contact"><i class="fa fa-phone"></i> Contact</a></li>
+						<li><a href="#"><i class="fa fa-cog fa-spin"></i> Refference</a></li>
+
+					</ul>	
+</section>
+<section class="middleSect">
+	<div class="mainMid">
+		<div class="midLeft">
+		</div>
+		<div class="midRight">
+			<div class="theContainer">
+				<h1>Send Us Feedback.</h1>
+				<form action="contact" method="post" class="my_form">
+					{% csrf_token %}
+					<input type="text" name="name" placeholder="Your Name...">
+					<input type="email" name="email" placeholder="Your Email...">
+					<textarea name="feed" placeholder="Your Feedback...">
+						
+					</textarea><br>
+					<input type="submit" name="submit" value="Send">
+				</form>
+				<h1>Get In Touch via Social Media.</h1>
+				 <ul>
+               	<li><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+               	<li><a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
+               	<li><a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a></li>
+               	<li><a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
+               </ul>
+			</div>
+		</div>
+	</div>
+</section>
+</body>
+<script type="text/javascript" src="{% static 'js/js.js' %}"></script>
+</html>

@@ -1,0 +1,187 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+	<link rel='stylesheet' media='screen and (max-width: 500px)' href ="{% static 'css/stylemin.css' %}">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Index</title>
+</head>
+<body>
+	<div id="body">
+		<section class="topSection">
+			 <div class="topnavi">
+
+				  <div id="logoSection">
+				  	<h1>MAkapets</h1></div>
+				  <br>
+				  <div class="searchSection">
+				  <form action="">
+				  <input type="search" placeholder="search..."  name="Search">
+				  <input type="submit" name="submit" value="Search">
+				  </form>
+				  </div>
+				<div class="socialLinkSection">
+					<ul>
+						<li><a href="www.twitter.com"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="www.instagram.com"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="login"><i class="fa fa-sign-in">l</i></a></li>
+
+					</ul>
+				</div>
+			</div>
+			<nav id="naviTab">
+				
+				<div id="linkSection">
+					<ul>
+						<li><a href="home"><i class="fa fa-home" aria-hidden="true"></i> HOME</a></li>
+						<li><a href="about"><i class="fa fa-info"></i> About US</a></li>
+						<li><a href="contact"><i class="fa fa-phone"></i> Contact</a></li>
+						<li><a href="#"><i class="fa fa-cog fa-spin"></i> Refference</a></li>
+
+					</ul>	
+				</div>
+				<button id="linkSectionMini"><i class="fa fa-bars"></i></button>
+			</nav>
+			<div class="introSection">
+				<div id="linkSectionMiniMenu">
+						<ul>
+						<li><a href="home"><i class="fa fa-home" aria-hidden="true"></i> HOME</a></li>
+						<li><a href="about"><i class="fa fa-info"></i> About US</a></li>
+						<li><a href="contact"><i class="fa fa-phone"></i> Contact</a></li>
+						<li><a href="#"><i class="fa fa-cog fa-spin"></i> Refference</a></li>
+
+					</ul>	
+				</div>
+			<nav id="introText">
+				<h2>Carpet Center</h2> <p> amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
+				<button class="explorebtn"><a href="explore">Explore <b>&#8594;</b></a></button>
+			</nav>
+			<nav id="welcomeSection">
+				<div class="welcomeImg">
+				<!--<h1>"Welcome To Carpet center."</h1>-->
+				</div>
+			</nav>
+			</div>
+		</section>
+		<!--<div class="divider"></div>-->
+		<section class="middleSection">
+			<h1>Product Image Viewer</h1>
+			<br>
+			 <!-- Slideshow container -->
+	<div class="container">
+	<div class="slideshow-container active">
+		<img src="{% static './images/1.jpg' %}">
+	<div class="slide-info">
+	<h2>Tittle1.</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris.</p>
+	</div>
+	</div>
+	<div class="slideshow-container">
+		<img src="{% static './images/2.jpg' %}">
+	<div class="slide-info">
+	<h2>Tittle2.</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris.</p>
+	</div>
+	</div>
+	<div class="slideshow-container">
+		<img src="{% static './images/3.jpg' %}">
+	<div class="slide-info">
+	<h2>Tittle3.</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris.</p>
+	</div>
+	</div>
+	<div class="slideshow-container">
+		<img src="{% static './images/4.jpg' %}">
+	<div class="slide-info">
+	<h2>Tittle4.</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris.</p>
+	</div>
+	</div>
+	<div class="slide-navi">
+		<div class="slide-btn active"></div>
+		<div class="slide-btn"></div>
+		<div class="slide-btn"></div>
+		<div class="slide-btn"></div>
+	</div>
+    </div>
+		</section>
+		<section class="bottomSection">
+			<div class="feedbackSect">
+				<h1>Customer Reviews.</h1>
+{% for i in userfeed %}				
+<div class="card">
+	<div class="cardImg"><img src="{{i.imagepost.url}}"></div>
+	<div class="cardText">
+		<h4>{{i.uname}}</h4> 
+		<p>{{i.comment}}</p> &#9734; &#9734; &#9734; &#9734; &#9734;</div>
+</div>
+{% endfor %}
+</div>
+		</section>	
+<!--<div class="divider"></div>-->
+<div class="footer">
+  <h2>MAkapet</h2>
+	<div class="footerLeft">
+		     <div class="footerLeft1">
+		    <h3>Services</h3>
+        <ul>
+        	<li><a href="">Carpet sale</a></li>
+        	<li><a href="">carpet consoltuncy</a></li>
+        	<li><a href="">Carpet delivery</a></li>
+        	<li><a href="">Other services</a></li>
+        </ul>
+		</div>
+        <div class="footerLeft2"><h3>Social</h3>
+               <ul>
+               	<li><i class="fa fa-facebook"></i><a href="https://www.facebook.com"> Facebook</a></li>
+               	<li><i class="fa fa-twitter"></i><a href="https://www.twitter.com"> Twitter</a></li>
+               	<li><i class="fa fa-instagram"></i><a href="https://www.instagram.com"> Instagram</a></li>
+               	<li><i class="fa fa-linkedin"></i><a href="https://www.linkedin.com"> LinkedIn</a></li>
+               </ul>
+        </div>
+     </div>
+	
+	<div class="footerRight">
+		<div class="footerRight1">
+		<h3>Quick Links</h3>
+      	<ul>
+						<li><a href="home"><i class="fa fa-home" aria-hidden="true"></i> HOME</a></li>
+						<li><a href="about"><i class="fa fa-info"></i> About US</a></li>
+						<li><a href="contact"><i class="fa fa-phone"></i> Contact</a></li>
+						<li><a href="#"><i class="fa fa-cog fa-spin"></i> Refference</a></li>
+
+					</ul>	    </div>
+    <div class="footerRight2">
+    	<h3>Feedback.</h3>
+    	<form action="post1" method="post">
+    		{% csrf_token %}
+    		<label>Please Leave Feedback On Your Experience.</label>
+    		<input type="text" name="uname" placeholder="Username...">
+    		<input type="file" name="myfile">
+    		<textarea name="comment" placeholder="Your Feed..."></textarea>
+    		<input type="submit" name="submit" value="submit">
+    	</form>
+    </div>   
+	</div>
+</div>
+<script type="text/javascript" src="{% static 'js/js.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/styleexp.css'%}">
+	<link rel='stylesheet' media='screen and (max-width: 500px)' href ="{% static 'css/stylemin.css' %}">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>card</title>
+</head>
+<body>
+	<h1>Featured Products</h1>
+	<a href="home" class="myButton">Back</a><br>
+    <button class="shopping-cart-btn"><i class="fa fa-shopping-cart">c</i></button>
+	<br>
+	<div class="cartDiv">
+	<div class="cart-container">
+		<h1>CART</h1>
+		<div class="cart-row">
+			<span class="cart-column"><h3>Image</h3></span>
+			<span class="cart-column"><h3>Item</h3></span>
+			<span class="cart-column"><h3>Quantity</h3></span>
+			<span class="cart-column"><h3>Price</h3></span>
+			<span class="cart-column"></span>
+		</div>
+		<div class="cart-items">
+		
+		</div>
+		<div class="cart-total cart-row">
+			    <div class="cart-column"><button class="checkout">Proceed TO Checkout</button></b></div>
+                <strong class="cart-total-title cart-column">Total</strong>
+                <span class="cart-total-price cart-column">$0.00</span>
+            </div>
+
+	</div>
+</div>
+	<br>
+<div class="items-container">
+	{% for i in exploreData %}
+<div class="card">
+	<div class="cardImg"><img class="itemImg" src="{{i.imagepost.url}}"></div>
+	<div class="cardText"><div class="tittle"><h4><u>{{i.tittle}}</u></h4></div><p>{{i.feedpost}}</p>&#9733; &#9733; &#9733; &#9733; &#9733; <br><div class="price">$100</div>
+	<button class="addToCart">Add To Cart</button>
+	</div>
+</div>
+   {% endfor %}
+<!--
+<div class="card">
+	<div class="cardImg"><img class="itemImg" src="{% static 'images/2.jpg' %}"></div>
+	<div class="cardText"><div class="tittle"><h4><u>Carpet 2</u></h4></div><p>Brief long description and alot more about these said carpet.</p>&#9733; &#9733; &#9733; &#9733; &#9733; <br><div class="price">$100</div>
+	<button class="addToCart">Add To Cart</button>
+	</div>
+</div>
+<div class="card">
+	<div class="cardImg"><img class="itemImg" src="{% static 'images/3.jpg' %}"></div>
+	<div class="cardText"><div class="tittle"><h4><u>Carpet 3</u></h4></div><p>Brief long description and alot more about these said carpet.</p>&#9733; &#9733; &#9733; &#9733; &#9733; <br><div class="price">$100</div>
+	<button class="addToCart">Add To Cart</button>
+	</div>
+</div>
+<div class="card">
+	<div class="cardImg"><img class="itemImg" src="{% static 'images/4.jpg' %}"></div>
+	<div class="cardText"><div class="tittle"><h4><u>Carpet 4</u></h4></div><p>Brief long description and alot more about these said carpet.</p>&#9733; &#9733; &#9733; &#9733; &#9733; <br><div class="price">$100</div>
+	<button class="addToCart">Add To Cart</button>
+	</div>
+</div>
+<div class="card">
+	<div class="cardImg"><img class="itemImg" src="{% static 'images/5.jpg' %}"></div>
+	<div class="cardText"><div class="tittle"><h4><u>Carpet 5</u></h4></div><p>Brief long description and alot more about these said carpet.</p>&#9733; &#9733; &#9733; &#9733; &#9733; <br><div class="price">$100</div>
+	<button class="addToCart">Add To Cart</button>
+	</div>
+</div>
+<div class="card">
+	<div class="cardImg"><img class="itemImg" src="{% static 'images/7.jpg' %}"></div>
+	<div class="cardText"><div class="tittle"><h4><u>Carpet 6</u></h4></div><p>Brief long description and alot more about these said carpet.</p>&#9733; &#9733; &#9733; &#9733; &#9733; <br><div class="price">$100</div>
+	<button class="addToCart">Add To Cart</button>
+	</div>
+</div>
+-->
+</div>
+<script type="text/javascript" src="{% static 'js/cart.js' %}"></script>
+</body>
+</html>

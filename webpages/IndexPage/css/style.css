@@ -1,48 +1,105 @@
 *{
 	padding: 0;
 	margin: 0;
+	transition: all;
+	transition-duration: 2s ease-in;
+	box-sizing: border-box;
 }
 #body{
 	width: 100%;
-	height: 100vh;
 	transition: all;
+	padding: 5px;
+	overflow: hidden;
 	transition-duration: 3s;
+	/*background-image:url("../images/tempBG.jpg");*/
+	background: repeating-linear-gradient(#001225,#3E3B3B);
 }
 .topSection{
 	width: 100%;
-	height: 70%;
-	opacity: .8;
-	box-shadow: ;
 	margin: auto;
+	height: auto;
+	overflow: hidden;
+	}
+.topnavi{
+	height: 70px;
+	width: 100%;
+	background: green;
+}
+.topnavi .socialLinkSection{
+	float: right;
+	right: 10px;
+
+}
+.topnavi .socialLinkSection ul{
+	list-style: none;
+	
+
+}
+.topnavi .socialLinkSection ul li{
+	list-style: none;
+	display: inline;
+	font-size: 20px;
+	color: #000080;
+	padding: 3px;
+	bottom: 20px;
+	
+}
+.topnavi .searchSection{
+	margin-left: 30%;
+	width: 60%;
+}
+.topnavi .searchSection input[type="search"]{
+	padding: 5px;
+	width: 60%;
+	border: none;
+	border-radius: 10px;
+	outline: none;
+	opacity: .6;
+	text-align: center;
+}
+.topnavi .searchSection input[type="submit"]{
+	padding: 5px;
+	border: none;
+	opacity: .6;
+	border-radius: 10px;
 }
 #naviTab{
 	width: 100%;
 	height: 40px;
 	background: #202A44;
-	opacity: .6;
 }
 #logoSection{
 	float: left;
-	width: 30%;
-	background: #453324;
+	width: 20%;
 	height: 100%;
+	margin: auto;
+	border-radius: 20px;
+	overflow: hidden;
+}
+#logoSection img{
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+
 }
 #linkSection{
 	float: right;
 	width: 60%;
 	height: 100%;
+	right: 0;
 
 }
 #linkSection ul{
 	list-style: none;
-	width: 60%;
-	height: 100%;
+	width: 100%;
+	line-height: 40px;
+	float: right;
+	right: 0;
 }
 #linkSection li{
 	list-style: none;
-	display: inline;
-	width: 30%;
-	height: 100%;
+	display: inline-block;
+	line-height: 40px;
 }
 #linkSection a{
 	width: 100%;
@@ -50,35 +107,301 @@
 	text-decoration: none;
 	color: black;
 	background: white;
-	margin-top: 20px;
-	padding: 20px;
-	vertical-align: center;
-}
+	padding: 5px;
+	}
 #linkSection a:hover{
 	width: 100%;
 	height: 100%;
 	text-decoration: none;
 	color: white;
 	background: black;
-	padding: 20px;
 	text-align: center;
 	transition: all;
 	transition-duration: 3s;
 }
+#linkSectionMini{
+	width: 20%;
+	height: 100%;
+	background: yellow;
+	float: right;
+	display: none;
+}
+#linkSectionMiniMenu{
+	display: none;
+}
+.introSection{
+	width: 100%;
+	margin-top: 10px;
+}
+#introText{
+	float: left;
+	width: 30%;
+	color: skyblue;
+	padding: 10px;
+}
+#introText button{
+	background: skyblue;
+	border-radius: 10px;
+	color: skyblue;
+	padding: 10px;
+	border: none;
+	color: black;
+}
+#introText button:hover{
+	transform: scale3d(1.3, 1.3, 1.3);
+}
+#introText a{
+	text-decoration: none;
+	outline: none;
+}
 #welcomeSection{
-	width: 70%;
+	width: 60%;
 	height: 100%;
 	float: right;
-	background-image:url("../images/sampleBG.jpeg");
+	
 }
-#welcomeSection h1{
+.welcomeImg h1{
 	color: white;
 	text-align: center;
+	opacity: 1;
 	font-family:  cursive;
-	font-size: 60px;
+	font-size: 30px;
+}
+.welcomeImg{
+	margin-top: 10px;
+	width: 90%;
+	height: 350px;
+	opacity: .8;
+	border-radius: 10px;
+	background-repeat: no-repeat;
+	background: url(../images/carpet.jpeg);
+}
+.middleSection{
+	width: 100%;
+	height: auto;
+	margin-top: 40px;
+	overflow: hidden;
+	text-align: center;
+	border: solid 3px #70DBDB;
+	border-radius: 12px;
+}
+.middleSection h1{
+	background: repeating-linear-gradient(green, skyblue);
+	color: aquamarine;
+}
+/* Slideshow container */
+.slideshow-container {
+  width: 60%;
+  position: relative;
+  margin: auto;
+}
+
+/* Make the images invisible by default */
+.Containers {
+  display: none;
+}
+
+/* forward & Back buttons */
+.Back, .forward {
+  cursor: pointer;
+  position: absolute;
+  top: 48%;
+  width: auto;
+  margin-top: -23px;
+  padding: 17px;
+  color: grey;
+  font-weight: bold;
+  font-size: 19px;
+  transition: 0.4s ease;
+  border-radius: 0 5px 5px 0;
+  user-select: none;
+}
+
+/* Place the "forward button" to the right */
+.forward {
+  right: 0;
+  border-radius: 4px 0 0 4px;
+}
+
+/*when the user hovers,add a black background with some little opacity */
+.Back:hover, .forward:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption Info */
+.Info {
+  color: #e3e3e3;
+  font-size: 16px;
+  padding: 10px 14px;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Worknumbering (1/3 etc) */
+.MessageInfo {
+  color: #f2f2f3;
+  font-size: 14px;
+  padding: 10px 14px;
+  position: absolute;
+  top: 0;
+}
+
+/* The circles or bullets and indicators */
+.dots {
+  cursor: pointer;
+  height: 16px;
+  width: 16px;
+  margin: 0 3px;
+  background-color: #acc;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+.enable, .dots:hover {
+  background-color: #717161;
+}
+
+/* Faint animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.4s;
+  animation-name: fade;
+  animation-duration: 1.4s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
+}
+
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
 }
 
 .bottomSection{
+	margin-top: 30px;
 	width: 100%;
-	height: 50%;
+	height: auto;
+	overflow: hidden;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.card{
+margin-left:20px;
+width: 180px;
+height: 260px;
+border-radius: 20px;
+display: inline-block;
+transition: transform .7s ease;
+box-shadow: green 2px 3px 4px 0;
+}
+.card:hover{
+transform: scale(1.1);
+}
+.bottomSection h1{
+	justify-content: center;
+	color: white;
+}
+.cardImg{
+background: url(../images/1.jpg);
+width: 100%;
+height: 70%;
+border-radius: 20px 20px 0 0;
+background-size: cover;
+overflow: hidden;
+}
+.cardText{
+bottom: 0;
+left: -100%;
+opacity: .6;
+border-radius: 0 0 20px 20px;
+width: 100%;
+height: 30%;
+color:#54FF9F;
+font-size: 12px;
+background:#008B45;
+text-align: center;
+}
+.footer{
+	height: auto;
+	width: 100%;
+	background: #008B8B;
+	bottom: 0px;
+	color: #00FFFF;
+	padding: 10px;
+	overflow: hidden;
+}
+.footerLeft{
+	float: left;
+	width: 50%;
+
+}
+.footerLeft1{
+	float: left;
+	width: 50%;
+	
+}
+.footerLeft2{
+	float: right;
+	width: 50%;
+	
+}
+.footerRight{
+	float: right;
+	width: 50%;
+	
+}
+.footerRight1{
+	float: left;
+	width: 50%;
+	
+}
+.footerRight2{
+	float: right;
+	width: 50%;	
+}
+.footerRight2 label{
+	font-size: 12px;
+}
+.footerRight2 input[type="text"],
+              input[type="file"],
+              textarea{
+	min-width: 80%;
+	margin: auto;
+	padding: 3px;
+	margin-top: 6px;
+	border-radius: 6px;
+	outline: none;
+}
+.footerRight2 input[name="submit"]{
+	width: 20%;
+	margin-top: 6px;
+	padding: 6px;
+}
+.divider{
+	background: repeating-linear-gradient(black,white,red,white,green);
+	height: 20px;
+	width: 100%;
+}
+.footer ul{
+	list-style: none;
+}
+.footer a{
+	text-decoration: none;
+	font-size: 15px;
+	font-weight: bold;
+	color: #ffffff;
+}
+.footer a:hover{
+  border-bottom: solid 3px;
+}
+.footer ul li{
+	padding: 6px;
+	margin: 3px;
+	text-decoration: none;
+	font-weight: bold;
 }

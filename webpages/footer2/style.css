@@ -1,0 +1,32 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.footer{
+	height: 200px;
+	width: 100%;
+	background: teal;
+	bottom: 0px;
+	padding: 10px;
+}
+.footerLeft{
+	float: left;
+	width: 60%;
+
+}
+.footerLeft1{
+	float: left;
+	width: 50%;
+	
+}
+.footerLeft2{
+	float: right;
+	width: 50%;
+	
+}
+.footerRight{
+	float: right;
+	width: 30%;
+	
+}

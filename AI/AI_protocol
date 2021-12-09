@@ -18,3 +18,30 @@ loss = "mse"
 optimiser = "sgd"
 metric = ?
 ) #Tell model how to calculate loss how wrong weigh/biases are optimizer method to update weight and biases and metric calculate diff between lossses.
+
+
+
+
+
+NEW::
+
+features->the data to input to the ai model.
+Lable -> what is to be predicted.
+
+Types:
+
+supervised.
+Unsupervised.
+Reinforcement.
+
+Tensorflow:
+
+made up of:
+ Graphs -> Equationns.
+ Sessions -> solving.
+ 
+ 
+ Tensors:
+ 
+ Ranks = 0,1,2
+ shapes =  ???

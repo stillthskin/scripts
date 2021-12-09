@@ -1,0 +1,30 @@
+concatnation = +
+input('What you want captured?')
+print()
+int(str)
+type(any)
+array = [1,2,3,4]
+array[-1] = 4
+.upper()
+.replace()
+OR AND NOT
+f'string{variable}string'# formated string
+list.append(1)
+list.insert(0,1)
+list.sort() == assending
+list.leverse() == dessending
+list.count(5s)
+tuple,set
+Dictionaries={"key":"value_pairs"}
+customer = {"name":"still",}
+message.split(' ') #slit with space as boundary return list of words.
+key_word_arguments,positional_arguments.#parameters.
+try:
+except exception_name:
+CamelCase for classes
+underscore_for_methods
+Object1 = ClassName()
+def __init__():
+self keyword = reference current object
+inheritance   class Cat(Animal):
+

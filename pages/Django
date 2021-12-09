@@ -1,0 +1,47 @@
+django-admin 
+django-admin startproject project_name.
+python manage.py runserver /*to deploy app*/
+
+view.py
+from django.shortcuts import render
+from django.http impor HttpResponse
+
+def index(request):
+     return HttpResponse('Hello world!')
+
+Django path urls. #create urls.py fit urls  
+fromdjango.urls import path
+from . import fileName
+urlpatterns = [ 
+	path('', fileName.functionName)
+	]
+
+model.py
+ #create products and attributes to be entered to database.
+ python3 manage.py makemigrations 
+ python3 manage.py migrate #move and create database tables based on
+from django.db import models
+class student(models.Model):
+     name = models.CharField(max_length=255)
+     id_no = models.IntegerField()
+
+models save to db
+from .models import model_name 
+data = request.POST[]
+data = model_name[data=dbdata]  
+data.save() 
+     
+settings.py
+import os
+import path
+STATICFILES_DIRS = os.path.join(BASE_DIR, 'static')
+BASE_DIR
+
+
+image upload
+input_type=file
+
+view 
+file = request.file['filename']
+ 
+ 

@@ -1,0 +1,406 @@
+body{
+    position: relative;
+    min-height:100vh;
+    width:100%;
+    display:flex; 
+    flex-direction:column;
+    margin:0;
+    padding-bottom:10px; 
+ }
+a{
+	outline: none;
+}
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.links{
+	background: #008080;
+	width: 100%;
+	height: 60px;
+}
+.links h1{
+	float: left;
+	margin:4px;
+}
+.links ul{
+	padding: 0;
+	list-style: none;
+	float: right;
+	outline: none;
+	margin-right: 15px;
+}
+.links ul li{
+	display: inline;
+	outline: none;
+
+}
+.imglink{
+	width: 30px;
+	height: 30px;
+	border-radius: 100%;
+	padding:0;
+}
+.search{
+	float: right;
+}
+.list2{
+	display: none;
+}
+.list1{
+	display: flex;
+}
+.nav{
+	width: 100%;
+	min-height:60px; 
+	background: #40E0D0;
+	padding: ;
+}
+.nav a {
+	text-decoration: none;
+	font-size: 19px;
+	padding: 15px;
+	color: #363228;
+}
+.nav a:hover {
+color: #ffffff;
+}
+.nav ul{
+	display: inline-flex;
+	width: 90%;
+	list-style: none;
+	line-height: 2.5em;
+	padding: 0;
+	margin: 0;
+}
+.nav ul li{
+	width: 15%;
+
+}
+.nav ul li:hover{
+	border-bottom: solid #363228;
+	transition: all 0.3s ease;
+
+}
+.nav ul li:nth-child(1):hover{
+	border-bottom:none;
+}
+.nav ul li:hover .sub1 ul{
+	display: block;
+	padding: 0;
+	margin: 0;
+	
+}
+
+.sub1{
+    padding: 0px;
+    position: absolute;
+    width: 15%;
+}
+.sub1 ul{
+	display: none;
+	position: absolute;
+	background: #40E0D0;
+	top: 3px;
+	text-align: left;
+}
+.sub1 ul li{
+	width:100%;
+	
+}
+
+.main{
+	width: 100%;
+	height: 100vh;
+	margin-top: 10px;
+	margin-bottom: 110px;
+	padding:10px; 
+}
+.tabcontent{
+width: 20%;
+float:left;
+height: 70vh;
+min-height: 100px;
+background:#008080;
+margin-left: 0;
+color: #000000;
+text-align: justify;
+padding: 5px;
+}
+.tabcontent h3{
+	margin-left: 5%;
+	padding: 10px;
+}
+.tabcontent hr{
+	width: 70%;
+	margin: auto;
+}
+.tabcontent ul{
+	margin-top: 5%;
+}
+.tabcontent ul li{
+	padding: 15px;
+	border-bottom: none 1px;
+	width: 80%;
+	display: block;
+	color: #fff;
+}
+.tabcontent ul li:hover{
+background: #40E0D0;
+color: #000000;
+}
+.mainsect{
+width: 70%;
+height: 80vh;
+float: right;
+margin-right:1%;
+background: #ffffff;
+text-align: justify;
+padding: 5px;
+}
+img{
+    width: 100%;
+	height: 100%;
+	position: relative;
+}
+ #box{
+ 	width: 100%;
+ 	height: 100%; 
+ 	position: relative;
+ }
+ #slider{
+ 	width: 80%;
+ 	height: 400px;
+ 	margin: 20px auto;
+ 	position: relative;
+ 	border: 10px solid white;
+ 	box-shadow: 0px 0px 5px 2px #ccc;
+ }
+ button{
+ 	padding: 15px;
+ 	border: none;
+ 	background: #37f;
+ 	font-size: 25px;
+ 	color: white;
+ 	position: absolute;
+ 	top:45%;
+ 	cursor: pointer;
+ }
+
+.next{
+	border-radius: 10px 0px 0px 10px;
+	margin-left: 93.5%;
+}
+.prew{
+	border-radius: 0px 10px 10px 0px;
+}
+.item{
+	position: relative;
+	width:23%;
+	margin:0.5%;
+	height:auto;
+	display:inline-block;
+	box-shadow: 1px 1px 1px 1px;
+}
+.item img{
+	width:100%;
+	height:100%;
+	display:block;
+}
+.item:hover .overlay{
+	opacity: 1;
+}
+.item:hover .overlayLeft{
+	width: 100%;
+}
+.overlay{
+	position: absolute;
+	transition: all 1s ease;
+	opacity: 0;
+	background-color:#eee;
+}
+.overlayLeft{
+    height:100%;
+    width: 0;
+    top: 0;
+    left: 0;
+}
+.text{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: #000000;
+	font-size:20px;
+}
+.nav2{
+    position: relative;
+	height: 70px;
+	padding: 7px;
+	width: 90%;
+}
+.foot{
+	bottom: 0;
+	position: relative;
+	display: block;
+	width: 98%;
+	padding: 10px;
+	margin-left: 1%;
+	margin-right: 1%;
+	background:#081B33;
+	color: #ffffff;
+}
+.foot .f1{
+	width: 60%;
+	float: left;
+}
+.foot .f2{
+	width: 40%;
+	float: right;
+}
+.foot .f1 .f11{
+	width: 48%;
+	float: left;
+	margin-left: 2%
+}
+
+.foot .f1 .f12{
+	width: 50%;
+	float: right;
+}
+.foot .f1 .f11 ul li:hover{
+	background: green;
+	color: black;
+	}
+.foot ul li{
+	padding: 5px;
+	display: block;
+	}
+.foot ul{
+	margin: 0;
+	padding: 0;
+
+}
+.foot .f1 .f12 ul{
+display: inline-flex;
+}
+.foot .f1 .f12 a{
+text-decoration: none;
+color: green;
+}
+.foot .f1 .f12 .subs{
+	background:#000000;
+	color: green;
+	border:solid 2px green;
+	padding: 7px;
+	border-radius: 7px;
+	text-decoration: none;
+}
+.foot input[type=email]{
+	width: 80%;
+	background: #020e1c;
+	border-top:none;
+	border-left:none;
+	color: #ffffff;
+	float: right;
+	padding: 5px;
+	margin: 5px;
+	border-radius: 4px;
+}
+.foot input[type=email]:focus{
+color:#000000;
+background:#ffffff;
+	}
+.foot textarea:focus{
+color:#000000;
+background:#ffffff;
+	}
+.foot textarea{
+	width:80%;
+	background: #06111f;
+	border-top:none;
+	border-left:none;
+	color: #ffffff;
+	float: right;
+	resize: none;
+	padding: 5px;
+	margin:5px;
+	border-radius: 4px;
+}
+.foot input[type=submit]{
+width: 21%;
+float: right;
+padding: 7px;
+margin:5px;
+color: green;
+background: #000000;
+border:solid 2px green;
+border-radius: 2px;
+}
+.cop {
+	position: absolute;
+	bottom: 0;
+	background: #ffffff;
+	width: 98%;
+	color: #000000;
+	margin-left: 1%;
+	margin-right: 1%;
+	font-size: 15PX;
+	text-align: center;
+}
+.AboutBody{
+	width: 100%;
+	height: 100vh;
+	background: black;
+}
+.AboutBody h1{
+	color: #fff;
+	margin-left: 15%;
+	margin-top: 5%;
+}
+.AboutImg{
+	width: 15%;
+	height: 25%;
+	margin-left: 15%;
+	margin-top: 6%;
+}
+.AboutImg img{
+	border-radius: 50%;
+}
+.AboutDesc{
+	color: #fff;
+	width: 60%;
+	float: right;
+	display: flex;
+	text-align: justify;
+	margin-right: 5%;
+}
+.contactForm{
+	width: 60%;
+	margin-left: 20%;
+}
+.contactForm form input[type="email"],
+                  input[type="text"],
+                  textarea{
+  	width: 60%;
+  	padding: 5px;
+  	margin-left: 15%;
+  	margin-top: 15px;
+                  }
+.contactForm form input[type="submit"]{
+	padding: 7px;
+  	margin-left: 15%;
+  	margin-top: 10px
+}
+
+
+@keyframes example {
+  0%   {background-image: url("../image/1.jpg");}
+  25%  {background-image: url("../image/2.jpg");}
+  50%  {background-image: url("../image/3.jpeg");}
+  100% {background-image: url("../image/4.jpg");}
+}
+@keyframes mover{
+	
+}

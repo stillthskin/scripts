@@ -1,0 +1,13 @@
+cd etc
+ls
+cd init.d
+ls
+upload script
+
+or
+............................
+upload to
+/sdcard/Downloads
+upload script
+drop to shell
+sh script.sh

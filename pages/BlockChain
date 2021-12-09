@@ -1,0 +1,4 @@
+Distributed ledger.
+Chain of transactions from 1 to current.
+Block hash.- encrypt transaction details.
+Miners verify and validate ledger get reward.

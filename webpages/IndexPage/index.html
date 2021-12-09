@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel='stylesheet' media='screen and (max-width: 500px)' href ='css/stylemin.css'>
 	<meta charset="utf-8">
@@ -8,29 +9,179 @@
 </head>
 <body>
 	<div id="body">
-		<div class="topSection">
+		<section class="topSection">
+			 <div class="topnavi">
+				  <div id="logoSection"><img src="./images/logofree2.jpg"></div>
+				  <br>
+				  <div class="searchSection">
+				  <form action="">
+				  <input type="search" placeholder="search..."  name="Search">
+				  <input type="submit" name="submit" value="Search">
+				  </form>
+				  </div>
+				<div class="socialLinkSection">
+					<ul>
+						<li><i class="fa fa-cog fa-spin"></i></li>
+						<li><i class="fa fa-twitter"></i></li>
+						<li><i class="fa fa-facebook"></i></li>
+						<li><i class="fa fa-instagram"></i></li>
+
+					</ul>
+				</div>
+			</div>
 			<nav id="naviTab">
-				<div id="logoSection">here</div>
+				
 				<div id="linkSection">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="#">Refference</a></li>
+
+					</ul>	
+				</div>
+				<button id="linkSectionMini"><hr><br><hr><br><hr></button>
+			</nav>
+			<div class="introSection">
+				<div id="linkSectionMiniMenu">
 					<ul>
 						<li><a href="#">Home</a></li>
 						<li><a href="#">About Us</a></li>
 						<li><a href="#">Contact</a></li>
 						<li><a href="#">Refference</a></li>
-
-					</ul>
+          </ul>	
 				</div>
+			<nav id="introText">
+				<p>
+				<h1>"Carpet Center"</h1> <br> amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
+				<button class="explorebtn"><a href="explore.html">Explore</a></button>
 			</nav>
 			<nav id="welcomeSection">
-				<br>
-				<br>
-				<h1>"Welcome To Carpet center."</h1>
+				<div class="welcomeImg">
+				<!--<h1>"Welcome To Carpet center."</h1>-->
+				</div>
 			</nav>
-		</div>
-		<div class="bottomSection">
-			
-		</div>
-	</div>
+			</div>
+		</section>
+		<!--<div class="divider"></div>-->
+		<section class="middleSection">
+			<h1>Product Image Viewer</h1>
+			<br>
+			 <!-- Slideshow container -->
+<div class="slideshow-container fade">
 
+  <!-- Full images with numbers and message Info -->
+  <div class="Containers">
+    <div class="MessageInfo">1 / 3</div>
+    <img src="./images/1.jpg" style="width:100%">
+    <div class="Info">First caption</div>
+  </div>
+
+  <div class="Containers">
+    <div class="MessageInfo">2 / 3</div>
+    <img src="./images/2.jpg" style="width:100%">
+    <div class="Info">Second Caption</div>
+  </div>
+
+  <div class="Containers">
+    <div class="MessageInfo">3 / 3</div>
+    <img src="./images/3.jpg" style="width:100%">
+    <div class="Info">Third Caption</div>
+  </div>
+
+  <!-- Back and forward buttons -->
+  <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The circles/dots -->
+<div style="text-align:center">
+  <span class="dots" onclick="currentSlide(1)"></span>
+  <span class="dots" onclick="currentSlide(2)"></span>
+  <span class="dots" onclick="currentSlide(3)"></span>
+</div> 
+		</section>
+		<section class="bottomSection">
+			<div class="feedbackSect">
+				<h1>Customer Reviews.</h1>
+				<div class="card">
+	<div class="cardImg"></div>
+	<div class="cardText"><h3>Customer Name</h3> <p>Brief feedback based on previous purchase.</p></div>
+</div>
+<div class="card">
+	<div class="cardImg"></div>
+	<div class="cardText"><h3>Customer Name</h3> <p>Brief feedback based on previous purchase.</p></div>
+</div>
+<div class="card">
+	<div class="cardImg"></div>
+	<div class="cardText"><h3>Customer Name</h3> <p>Brief feedback based on previous purchase.</p></div>
+</div>
+<div class="card">
+	<div class="cardImg"></div>
+	<div class="cardText"><h3>Customername</h3> <p>Brief feedback based on previous purchase.</p></div>
+</div>
+<div class="card">
+	<div class="cardImg"></div>
+	<div class="cardText"><h3>Customer Name</h3> <p>Brief feedback based on previous purchase.</p></div>
+</div>
+<div class="card">
+	<div class="cardImg"></div>
+	<div class="cardText"><h3>Customer name</h3> <p>Brief feedback based on previous purchase.</p></div>
+</div>
+			</div>
+		</section>	
+</div>
+<div class="divider"></div>
+<div class="footer">
+  <h2><u><i>Company Name:</i></u></h2>
+	<div class="footerLeft">
+		     <div class="footerLeft1">
+		    <h3>Services</h3>
+        <ul>
+        	<li><a href="">Carpet sale</a></li>
+        	<li><a href="">carpet consoltuncy</a></li>
+        	<li><a href="">Carpet delivery</a></li>
+        	<li><a href="">Other services</a></li>
+        </ul>
+		</div>
+        <div class="footerLeft2"><h3>Social</h3>
+               <ul>
+               	<li><a href="https://www.facebook.com">facebook</a></li>
+               	<li><a href="https://www.twitter.com">twitter</a></li>
+               	<li><a href="https://www.instagram.com">Instagram</a></li>
+               	<li><a href="https://www.linkedin.com">LinkedIn</a></li>
+               </ul>
+        </div>
+     </div>
+	
+	<div class="footerRight">
+		<div class="footerRight1">
+		<h3>Quick Links</h3>
+       <ul>
+            <li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="#">Refference</a></li>
+       </ul>
+    </div>
+    <div class="footerRight2">
+    	<h3>Feedback.</h3>
+    	<form>
+    		<label>Please Leave Feedback On Your Experience.</label>
+    		<input type="text" name="name" placeholder="Username...">
+    		<input type="file" name="image">
+    		<textarea placeholder="Your Feed..."></textarea>
+    		<input type="submit" name="submit" value="submit">
+    	</form>
+    </div>   
+	</div>
+</div>
+<script type="text/javascript" src="js/js.js"></script>
 </body>
 </html>

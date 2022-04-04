@@ -1,4 +1,34 @@
-Distributed ledger.
-Chain of transactions from 1 to current.
-Block hash.- encrypt transaction details.
-Miners verify and validate ledger get reward.
+Blockchain Intuition.
+ part_1 { 
+ " For the currency we deserve "
+ Blockchain - a continuously growing list of records, called blocks, which are linked and secured using cryptography.
+ Block -BlockIdD, Nonce, Data, prevHash, ItsHAsh(prev_hash next_node).
+ 
+ The SHA256 Hash - 64 Characters 4-Bit = 256 Bytes.
+ Immutable ledger - Change changes previous hash invalidates the chain.
+ P2P Distribution  - Immutable ledger on all peers. invalidated chain corrected by the  other valid peers.
+ Mining. Nonce(Number Used  only once) Varying the block. without changing the block. mining = Guessing the nonce untill the target is hit(leading zeroz).
+ Byzantine Fault Tolerance. 33% Traitor tolererance. The byzantine generals.
+ Consesus protocol.  51% consensus. 
+ 51% attack = 51 % of the hash rate not the nodes. Attacker aims at benefiting from the double spend problem( issoalte their higer hash rate nodes
+ from the network and come back as the longest chain and invalidates many blocks)
+ 
+ {
+ To be reviewed.....
+ Bit to target conversion.
+ cur_target = 0000000000000000005d97dc0000000000000000000000000000000000000000
+ max_target = 00000000FFFF0000000000000000000000000000000000000000000000000000
+ }
+ }
+ part_2 {
+ (UTXO's unspent transactions outputs) <- Input(build) -> Output(sent) -> change(back to UTXO).
+ 
+ (private & public key) private to encrypt message yields a signature.(signature + public = verification).
+ private key to generate public key via ECC.
+ 
+ SegregatedWitness(SegWit).
+ scriptsig(public_key & signature part of a transaction)
+ 
+ bitcoin address vs public key = Extra layer of security(public_key -> SHA256 -> BTC_address)
+ Hierarchically Deterministic(HD) Wallets = one_master_key = more_than_one-private_key = more_public_keys = more_anon_transactions.
+ }

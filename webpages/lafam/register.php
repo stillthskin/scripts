@@ -4,12 +4,13 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="shortcut icon" href="/img/hit.png" type="image/x-icon">
 	<title>Register</title>
 </head>
 <body id="body">
 	<?php 
     if (isset($_POST['submit'])) {
-    	$con = mysqli_connect("localhost", "still", "still1234", "famstudio");
+    	require("conect.php");
     	$theEmail = mysqli_escape_string($con, $_POST['email']);
     	$username = mysqli_escape_string($con, $_POST['username']);
     	$password = mysqli_escape_string($con, $_POST['password1']);

@@ -160,7 +160,7 @@
 	width: 100%;
 	height: 60%;
 }
-.popup #popupclose{
+.popup .popupclose{
 	float: right;
 	background: red;
 	color: #ffffff;
@@ -183,7 +183,7 @@
 	margin: 9px;
 	margin-left: 30%;
 }
-.popupcont.active{
+#popupcont.active{
 	display: block;
 }
 #cart-container{

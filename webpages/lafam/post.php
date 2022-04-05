@@ -9,11 +9,12 @@
 <body id="body">
 	<?php 
     if (isset($_POST['submit'])) {
-    	$con = mysqli_connect("localhost", "still", "still1234", "famstudio");
+    	require("conect.php");
     	$tittle = mysqli_escape_string($con, $_POST['tittle']);
     	$price = mysqli_escape_string($con, $_POST['price']);
     	$descript = mysqli_escape_string($con, $_POST['descript']);
     	$postimg = $_FILES["postimg"]["name"];
+    	$posterror = $_FILES["postimg"]["error"];
     	$tempname = $_FILES["postimg"]["tmp_name"];
     	$folder = "images/".$postimg;
     	$myquery = "INSERT INTO mypost(tittle, postimg, description, price) VALUES('$tittle', '$postimg', '$descript', '$price')";
@@ -23,7 +24,7 @@
     		echo "File uploaded succesfully";
     	}
     	else{
-    		echo "File upload failed";
+    		echo $posterror;
     	}
     	if ($query) {
     		echo("success");

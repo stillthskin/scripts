@@ -4,13 +4,14 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="shortcut icon" href="/img/hit.png" type="image/x-icon">
 	<title>Login</title>
 </head>
 <body id="body">
 	<?php 
 	
     if (isset($_POST['submit'])) {
-    	require("con.php");
+    	require("conect.php");
     	$email = mysqli_escape_string($con, $_POST['email']);
     	$password = mysqli_escape_string($con, $_POST['password']);
     	$password = md5($password);

@@ -1,24 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 namespace PhpMyAdmin\Crypto;
 
+use Exception;
 use phpseclib\Crypt\AES;
 use phpseclib\Crypt\Random;
-use Throwable;
-use function is_callable;
-use function defined;
-use const SODIUM_CRYPTO_SECRETBOX_KEYBYTES;
-use function is_string;
-use function mb_strlen;
-use function random_bytes;
-use function hash_hmac;
-use function mb_substr;
-use function hash_equals;
-use const SODIUM_CRYPTO_SECRETBOX_NONCEBYTES;
-use function sodium_crypto_secretbox;
-use function sodium_crypto_secretbox_open;
 
 final class Crypto
 {
@@ -59,7 +45,7 @@ final class Crypto
     /**
      * @param string $ciphertext
      *
-     * @return string|null
+     * @return string
      */
     public function decrypt($ciphertext)
     {
@@ -84,7 +70,7 @@ final class Crypto
             return $key;
         }
 
-        $key = $_SESSION['URLQueryEncryptionSecretKey'] ?? null;
+        $key = isset($_SESSION['URLQueryEncryptionSecretKey']) ? $_SESSION['URLQueryEncryptionSecretKey'] : null;
         if (is_string($key) && mb_strlen($key, '8bit') === $keyLength) {
             return $key;
         }
@@ -162,7 +148,7 @@ final class Crypto
         $ciphertext = mb_substr($encrypted, SODIUM_CRYPTO_SECRETBOX_NONCEBYTES, null, '8bit');
         try {
             $decrypted = sodium_crypto_secretbox_open($ciphertext, $nonce, $key);
-        } catch (Throwable $e) {
+        } catch (Exception $e) {
             return null;
         }
 

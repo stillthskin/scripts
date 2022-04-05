@@ -4,27 +4,24 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="shortcut icon" href="/img/hit.png" type="image/x-icon">
 	<title>FamStudio</title>
 </head>
 <body id="body">
 	<div id="popupcont">
-			<nav class="popup">
-				<button Id="popupclose">
+			<!--<nav class="popup">
+				<button class="popupclose">
 					<h2>X</h2>
 				</button>
 				<br>
-				<!--<img src="/img/1.jpg" alt="Product">
-				<nav class="popupdesk">
-					<h3>Tittle</h3>
+				<img src="" alt="Product">
+				<nav id="popupdesk">
+					<h3></h3>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat.
 					</p>
-				</nav>-->
+				</nav>
 				<button class="Buy">Add To Cart</button>
-			</nav>
+			</nav>--> 
 		</div>
 	<section class="top">
 		<div class="navi">
@@ -86,7 +83,7 @@
 		</div>
 	</section>
 	<section class="mid">
-		<?php require("con.php"); ?>
+		<?php require("conect.php"); ?>
 		<div class="gallery">
 			<?php
             $query = "SELECT * FROM mypost";
@@ -103,7 +100,7 @@
             ?>
             <div class="card">
 				<div class="imgcont">
-					<div class="item-image"><?php echo '<img src="./images/'.$image.'" alt="Item">'; ?></div>
+					<div><?php echo '<img class="item-image" src="./images/'.$image.'" alt="Item">'; ?></div>
 					<div class="item-tittle"><?php echo $tittle; ?></div>
 					<div class="item-descript"><?php echo $descript; ?></div>
 					<div class="item-price"><?php echo $price;  ?></div>

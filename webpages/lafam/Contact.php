@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 	<link rel="shortcut icon" href="/img/hit.png" type="image/x-icon">
 	<title>Contact</title>
 </head>
@@ -36,7 +37,9 @@
 }
 
 	 ?>
-
+<button class="backtoroot">
+<a class="homelink" href="index.php"><i class="fa fa-home"></i></a>
+</button>
 <div class="container">
 	<nav class="containerleft">
 		<h1>Contact US</h1>

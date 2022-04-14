@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 	<link rel="shortcut icon" href="/img/hit.png" type="image/x-icon">
 	<title>Register</title>
 </head>
@@ -11,6 +12,7 @@
 	<?php 
     if (isset($_POST['submit'])) {
     	require("conect.php");
+    	$con = mysqli_connect('sql102.epizy.com', 'epiz_31469540', 'bGsR9zJOxzhT', 'epiz_31469540_lafam');
     	$theEmail = mysqli_escape_string($con, $_POST['email']);
     	$username = mysqli_escape_string($con, $_POST['username']);
     	$password = mysqli_escape_string($con, $_POST['password1']);
@@ -38,6 +40,9 @@
 
 
 	 ?>
+<button class="backtoroot">
+<a class="homelink" href="index.php"><i class="fa fa-home"></i></a>
+</button>
 <div class="container">
 	<nav class="containerleft"></nav>
 	<nav class="containerright">

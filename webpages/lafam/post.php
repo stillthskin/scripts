@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 	<title>Admin</title>
 </head>
 <body id="body">
@@ -35,7 +36,10 @@
     	$con.close();
        }
 
-	 ?>
+	 ?>\
+<button class="backtoroot">
+<a class="homelink" href="index.php"><i class="fa fa-home"></i></a>
+</button>
 <div class="container">
 	<nav class="containerleft">
 		<h1>Admin Post</h1>
